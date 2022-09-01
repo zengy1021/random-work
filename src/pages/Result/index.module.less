@@ -1,0 +1,179 @@
+.home_box {
+  height: 100vh;
+  overflow: hidden;
+  background: url('./img/bg@3x.png') center center no-repeat;
+  background-size: 100%;
+  .home_content {
+    width: 725.85px;
+    height: 1222.22px;
+    background: url('./img/acard_bg@3x.png') center center no-repeat;
+    background-size: 100%;
+    margin: auto;
+    margin-top: 95.41px;
+    position: relative;
+    overflow: hidden;
+    .home_header {
+      // margin-top: 73.67px;
+      // margin-left: 93px;
+      display: flex;
+      flex-direction: row;
+      padding-left: 93px;
+      padding-top: 73.67px;
+      box-sizing: border-box;
+      .home_title {
+        width: 214.37px;
+        height: 42.27px;
+        background: url('./img/resultx1.png') center center no-repeat;
+        background-size: 100%;
+        margin-right: 15.1px;
+      }
+      .home_arrow {
+        width: 89.37px;
+        height: 38.65px;
+        overflow: hidden;
+        position: relative;
+        .home_arrow_scoll {
+          position: absolute;
+          width: calc(89.37px * 2);
+          height: 38.65px;
+          background: url('./img/arrow_right@3x.png') center;
+          background-size: 50%;
+          animation: rightMove linear 2s infinite 0s;
+        }
+      }
+    }
+    .home_show_box {
+      margin-top: 43.48px;
+      margin-left: 93px;
+      width: 537.44px;
+      height: 94.2px;
+      background: #b9ddff;
+      border-radius: 24.15px;
+      display: flex;
+      flex-direction: row;
+      padding: 0 24px;
+      box-sizing: border-box;
+      justify-content: space-between;
+      align-items: center;
+      .show_box_info {
+        font-size: 32.61px;
+        font-weight: 700;
+        color: #1d2542;
+        line-height: 94.2px;
+        height: 94.2px;
+        // line-height: 14.49px;
+        .show_box_info_null {
+          display: inline-block;
+          width: 36.23px;
+          height: 36.23px;
+          background: url('./img/1f973@2x.png') center center no-repeat;
+          background-size: 100%;
+          margin-left: 19.32px;
+          vertical-align: middle;
+          margin-top: -1px;
+        }
+      }
+      .show_box_info2 {
+        font-size: 21.74px;
+        font-weight: 400;
+        line-height: 94.2px;
+        height: 94.2px;
+        color: #1d2542;
+        letter-spacing: 0.22px;
+        .show_box_info_null {
+          display: inline-block;
+          width: 57.97px;
+          height: 57.97px;
+          background: url('./img/emoji_bg@2x.png') center center no-repeat;
+          background-size: 100%;
+          margin-right: 17.51px;
+          vertical-align: middle;
+          // margin-top: -1px;
+        }
+      }
+    }
+    .home_show_table {
+      width: 537.44px;
+      height: 696.86px;
+      overflow-y: auto;
+      background: #f5f6f8;
+      border-radius: 24.15px;
+      margin-top: 27.17px;
+      margin-left: 93px;
+      padding: 10.87px 24.15px;
+      box-sizing: border-box;
+      .table_item {
+        display: flex;
+        padding: 0 12.18px;
+        box-sizing: border-box;
+        height: 73.67px;
+        border-bottom: 1px solid #dddddd;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &:last-child {
+          border-bottom: 0;
+        }
+        .left_item {
+          font-size: 25.36px;
+          font-weight: normal;
+          color: #000000;
+          letter-spacing: 0.25px;
+        }
+        .right_item {
+          font-size: 21.74px;
+          color: #888888;
+          font-weight: normal;
+          letter-spacing: 0.22px;
+          display: flex;
+          flex-direction: row;
+          .right_list_span {
+            margin-left: 35px;
+            &:first-child {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+    .home_back_btn {
+      position: absolute;
+      width: 519.32px;
+      height: 94.2px;
+      line-height: 94.2px;
+      text-align: center;
+      font-size: 36.23px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.36px;
+      bottom: 97.83px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background: linear-gradient(0deg, #e94720 0%, #ff7c5d 100%);
+      border-radius: 47.1px;
+    }
+  }
+}
+@keyframes rightMove {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: center;
+  }
+  100% {
+    background-position: right;
+  }
+}
+@keyframes scaleOutIn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
