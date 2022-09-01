@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import style from './index.module.less';
 import { useNavigate } from 'react-router-dom';
-import { Loading, ActivityIndicator } from 'zarm';
 
 export default function Home() {
   const myRef: any = useRef(null);
@@ -9,13 +8,8 @@ export default function Home() {
   const startRandom = () => {
     // console.log(myRef.current);
     // myRef.current.style.animation = 'shakeSlow 5s infinite ease-in-out';
-    Loading.show({
-      content: <ActivityIndicator size="lg" />,
-      stayTime: 2000,
-    });
-    setTimeout(() => {
-      navigate('/result', { replace: true });
-    }, 2000);
+
+    navigate('/result', { replace: true });
   };
   return (
     <div className={style.home_box}>
